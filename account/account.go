@@ -152,7 +152,7 @@ func (s *AccountService) GetBalanceAtBlock(tezosAddr string, id interface{}) (fl
 		return 0, errors.Wrapf(err, "could not get balance at snapshot '%s'", query)
 	}
 
-	return floatBalance / MUTEZ, nil
+	return floatBalance, nil
 }
 
 // CreateWallet returns Wallet with the mnemonic and password provided
