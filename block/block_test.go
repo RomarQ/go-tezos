@@ -6,7 +6,7 @@ import (
 
 	"gotest.tools/assert"
 
-	tezc "github.com/DefinitelyNotAGoat/go-tezos/client"
+	tezc "github.com/romarq/go-tezos-tezaria/client"
 )
 
 func Test_Get(t *testing.T) {

@@ -1,7 +1,7 @@
 package cycle
 
 import (
-	"github.com/DefinitelyNotAGoat/go-tezos/block"
+	"github.com/romarq/go-tezos-tezaria/block"
 )
 
 type blockServiceMock struct {

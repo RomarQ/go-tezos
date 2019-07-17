@@ -6,7 +6,7 @@ import (
 
 	"gotest.tools/assert"
 
-	tzc "github.com/DefinitelyNotAGoat/go-tezos/client"
+	tzc "github.com/romarq/go-tezos-tezaria/client"
 )
 
 func Test_GetVersions(t *testing.T) {

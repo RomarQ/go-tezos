@@ -1,8 +1,8 @@
 package snapshot
 
 import (
-	"github.com/DefinitelyNotAGoat/go-tezos/block"
-	"github.com/DefinitelyNotAGoat/go-tezos/network"
+	"github.com/romarq/go-tezos-tezaria/block"
+	"github.com/romarq/go-tezos-tezaria/network"
 )
 
 var (
@@ -35,10 +35,10 @@ var (
 	}
 
 	goldenSnapshot = Snapshot{
-		Cycle:           0,
-		Number:          5,
-		AssociatedHash:  "BMXVTnGN7rwaCE34yuAuKzTHaPgyCUBxuVkM2Bbfo5jZvrrbZrY",
-		AssociatedBlock: 1,
+		Cycle:                0,
+		Number:               5,
+		AssociatedBlockHash:  "BMXVTnGN7rwaCE34yuAuKzTHaPgyCUBxuVkM2Bbfo5jZvrrbZrY",
+		AssociatedBlockLevel: 1,
 	}
 
 	goldenGet = []byte(`{"last_roll":[],"nonces":[],"random_seed":"6ac67b546fb98acacb8b5c435acff959217b85907c3e8762875ce3afc39dbab3","roll_snapshot":5}`)
