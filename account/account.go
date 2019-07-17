@@ -67,7 +67,7 @@ func (s *AccountService) GetBalanceAtSnapshot(tezosAddr string, cycle int) (floa
 		return 0, errors.Wrapf(err, "could not get balance for %s at snapshot at %d cycle", tezosAddr, cycle)
 	}
 
-	return s.GetBalanceAtBlock(tezosAddr, snapShot.AssociatedHash)
+	return s.GetBalanceAtBlock(tezosAddr, snapShot.AssociatedBlockHash)
 }
 
 // GetBalance gets the balance of a public key hash at a specific snapshot for a cycle.
