@@ -7,4 +7,5 @@ type TezosAccountService interface {
 	CreateWallet(mnenomic string, password string) (Wallet, error)
 	ImportWallet(address, public, secret string) (Wallet, error)
 	ImportEncryptedWallet(pw, encKey string) (Wallet, error)
+	GetManagerKey(contract string) (string, error)
 }

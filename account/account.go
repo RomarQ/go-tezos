@@ -310,6 +310,21 @@ func (s *AccountService) ImportEncryptedWallet(pw, encKey string) (Wallet, error
 	return wallet, nil
 }
 
+// GetManagerKey returns the public key of a given contract
+func (s *AccountService) GetManagerKey(contract string) (string, error) {
+	resp, err := s.tzclient.Get("/chains/main/blocks/head/context/delegates/"+contract+"/manager_key", nil)
+	if err != nil {
+		return "", errors.Wrapf(err, "could not get manager key for contract '%s'", contract)
+	}
+
+	managerKey, err := unmarshalString(resp)
+	if err != nil {
+		return managerKey, errors.Wrapf(err, "could not get manager key for contract '%s'", contract)
+	}
+
+	return managerKey, nil
+}
+
 func (s *AccountService) generatePublicHash(publicKey []byte) (string, error) {
 	hash, err := blake2b.New(20, []byte{})
 	hash.Write(publicKey)
