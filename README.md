@@ -1,4 +1,4 @@
-[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/goat-systems/go-tezos/v4)
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/romarq/go-tezos/v4)
 # A Tezos Go Library
 
 Go Tezos is a GoLang driven library for your Tezos node. This library has received a grant from the Tezos Foundation to ensure it's continuous development through 2020.
@@ -7,7 +7,7 @@ Go Tezos is a GoLang driven library for your Tezos node. This library has receiv
 
 Get GoTezos 
 ```
-go get github.com/goat-systems/go-tezos/v4
+go get github.com/romarq/go-tezos/v4
 ```
 
 ### Getting A Block
@@ -17,7 +17,7 @@ package main
 
 import (
 	"fmt"
-	goTezos "github.com/goat-systems/go-tezos/v4/rpc"
+	goTezos "github.com/romarq/go-tezos/v4/rpc"
 )
 
 func main() {

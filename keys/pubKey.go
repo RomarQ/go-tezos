@@ -1,8 +1,8 @@
 package keys
 
 import (
-	tzcrypt "github.com/goat-systems/go-tezos/v4/internal/crypto"
 	"github.com/pkg/errors"
+	tzcrypt "github.com/romarq/go-tezos/v4/internal/crypto"
 	"golang.org/x/crypto/blake2b"
 )
 

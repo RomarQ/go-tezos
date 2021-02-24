@@ -7,8 +7,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	tzcrypt "github.com/goat-systems/go-tezos/v4/internal/crypto"
 	"github.com/pkg/errors"
+	tzcrypt "github.com/romarq/go-tezos/v4/internal/crypto"
 	"github.com/tyler-smith/go-bip39"
 	"golang.org/x/crypto/nacl/secretbox"
 	"golang.org/x/crypto/pbkdf2"

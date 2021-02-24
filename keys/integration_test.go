@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/goat-systems/go-tezos/v4/forge"
-	"github.com/goat-systems/go-tezos/v4/internal/testutils"
-	"github.com/goat-systems/go-tezos/v4/rpc"
+	"github.com/romarq/go-tezos/v4/forge"
+	"github.com/romarq/go-tezos/v4/internal/testutils"
+	"github.com/romarq/go-tezos/v4/rpc"
 )
 
 func Test_OperationWithKey(t *testing.T) {
